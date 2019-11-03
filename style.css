@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
 
 /*
  BARVY
@@ -14,20 +20,122 @@ html { box-sizing: border-box; }
 */
 
 body {
-    padding: 0;
-    margin: 0;
-    background-color: #e5e5e5;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #e5e5e5;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
-    margin: 0 auto; /* pruh je na stránce vycentrovaný */
-    background: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 960px;
+  /* obsah stránky je omezený do pruhu širokého 960px */
+  margin: 0 auto;
+  /* pruh je na stránce vycentrovaný */
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.obal {
+  max-width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  color: #48418e;
+}
+
+.položka {
+  padding: 5px 30px;
+}
+
+.appka {
+  color: #25133d;
+  font-weight: 700;
+}
+
+.nadpis {
+  position: relative;
+  font-size: 3em;
+  padding-bottom: 30px;
+}
+
+img {
+  position: absolute;
+  height: 40%;
+  bottom: 285px;
+  right: 195px;
+}
+
+.horni {
+  background-image: url(images/pozadi.jpg);
+  color: white;
+  padding: 30px;
+}
+
+.spodni {
+  display: flex;
+  color: #48418e;
+}
+
+.stáhnout {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 3%;
+  padding: 5px;
+  margin: 30px 30px 30px 0px;
+  background-color: #48418e;
+}
+
+.více {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 3%;
+  padding: 5px;
+  margin: 30px 30px 30px 0px;
+}
+
+.cestuj, .chatuj, .zažij {
+  text-align: center;
+  margin: 30px;
+}
+
+.ikon {
+  width: 5%;
+}
+
+.mapa {
+  position: absolute;
+  right: 315px;
+  bottom: 90px;
+}
+
+.bubliny {
+  position: absolute;
+  bottom: 90px;
+  right: 640px;
+}
+
+.letadlo {
+  position: abolute;
+  bottom: 90px;
+  left: 330px;
+}
+
+.podnadpis {
+  font-weight: 700;
+  padding-top: 100px
+}
+
+footer {
+  text-align: center;
+  background-color: #48418e;
+  color: white;
+  padding: 5px;
+}
