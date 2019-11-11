@@ -52,7 +52,17 @@ body {
 }
 
 .položka {
-  padding: 5px 30px;
+  display: inline-block;
+}
+
+a {
+  padding: 20px 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.položka:hover {
+  background-color: #b6b4dd;
 }
 
 .appka {
@@ -60,28 +70,24 @@ body {
   font-weight: 700;
 }
 
-.nadpis {
-  position: relative;
+h1 {
   font-size: 3em;
   padding-bottom: 30px;
-}
-
-img {
-  position: absolute;
-  height: 40%;
-  bottom: 285px;
-  right: 195px;
+  font-weight: 400;
 }
 
 .horni {
   background-image: url(images/pozadi.jpg);
   color: white;
   padding: 30px;
+  position: relative;
 }
 
-.spodni {
-  display: flex;
-  color: #48418e;
+img {
+  position: absolute;
+  height: 85%;
+  right: 0px;
+  bottom: 0px;
 }
 
 .stáhnout {
@@ -91,6 +97,7 @@ img {
   padding: 5px;
   margin: 30px 30px 30px 0px;
   background-color: #48418e;
+  color: white;
 }
 
 .více {
@@ -99,38 +106,48 @@ img {
   border-radius: 3%;
   padding: 5px;
   margin: 30px 30px 30px 0px;
+  color: white;
 }
 
-.cestuj, .chatuj, .zažij {
+.více:hover, .stáhnout:hover {
+  background-color: #b6b4dd;
+}
+
+.spodni {
+  display: flex;
+  color: #48418e;
+  position: relative
+}
+
+.popis {
   text-align: center;
   margin: 30px;
 }
 
 .ikon {
-  width: 5%;
+  height: 60px;
 }
 
-.mapa {
+.letadlo {
   position: absolute;
-  right: 315px;
-  bottom: 90px;
+  top: 30px;
+  left: 130px;
 }
 
 .bubliny {
   position: absolute;
-  bottom: 90px;
-  right: 640px;
+  top: 30px;
+  left: 450px
 }
 
-.letadlo {
-  position: abolute;
-  bottom: 90px;
-  left: 330px;
+.mapa {
+  position: absolute;
+  top: 30px;
+  right: 135px;
 }
 
 .podnadpis {
   font-weight: 700;
-  padding-top: 100px
 }
 
 footer {
@@ -138,4 +155,9 @@ footer {
   background-color: #48418e;
   color: white;
   padding: 5px;
+}
+
+.spodni {
+  padding-top: 70px;
+  position: relative;
 }
